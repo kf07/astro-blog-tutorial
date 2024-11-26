@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: StackBlitz埋め込みテスト
+title: Codepen埋め込みテスト
 author: Astro学習者
 description: "この記事単独で表示されます！"
 image:
@@ -9,8 +9,5 @@ image:
 pubDate: 2022-08-08
 tags: ["astro", "成功"]
 ---
-<iframe
-style="width:100%;height:520px;max-width:960px;"
-loading="lazy"
-src="https://stackblitz.com/edit/vitejs-vite-k3t1ta?embed=1&file=README.md">
+<iframe height="300" style="width: 100%;" scrolling="no" title="css variables gradient" src="https://codepen.io/kan_f/embed/RwzzJVv?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
 </iframe>
