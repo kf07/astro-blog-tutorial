@@ -19,18 +19,13 @@ h1 {
 	margin: 1rem 0;
 	font-size: 2.5rem;
 }
-
-.hamburger {
-	padding-right: 20px;
-	cursor: pointer;
+html.dark {
+	background-color: #0d0950;
+	color: #fff;
 }
 
-.hamburger .line {
-	display: block;
-	width: 40px;
-	height: 5px;
-	margin-bottom: 10px;
-	background-color: #ff9776;
+.dark .nav-links a {
+	color: #fff;
 }
 .nav-links {
 	width: 100%;
@@ -55,35 +50,15 @@ h1 {
 .nav-links a:focus {
 	background-color: #ff9776;
 }
-
-.expanded {
-	display: unset;
+.nav-links {
+	margin-left: 5em;
+	display: block;
+	position: static;
+	width: auto;
+	background: none;
 }
 
-html.dark {
-	background-color: #0d0950;
-	color: #fff;
-}
-
-.dark .nav-links a {
-	color: #fff;
-}
-
-
-@media screen and (min-width: 636px) {
-	.nav-links {
-		margin-left: 5em;
-		display: block;
-		position: static;
-		width: auto;
-		background: none;
-	}
-
-	.nav-links a {
-		display: inline-block;
-		padding: 15px 20px;
-	}
-	.hamburger {
-		display: none;
-	}
+.nav-links a {
+	display: inline-block;
+	padding: 15px 20px;
 }
