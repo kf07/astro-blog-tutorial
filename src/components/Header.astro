@@ -1,10 +1,10 @@
 ---
 import Navigation from "./Navigation.astro"
-import ThemeIcon from "./ThemeIcon.astro";
+import ThemeIcon from "../svelte/components/ThemeIcon.svelte"
 ---
 <header>
 	<nav>
-		<ThemeIcon />
+		<ThemeIcon client:only="svelte" />
 		<Navigation />
 	</nav>
 </header>

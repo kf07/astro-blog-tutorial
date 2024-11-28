@@ -1,8 +1,15 @@
 html {
 	background-color: #FFFFFF;
 	font-family: sans-serif;
+	transition: background-color .2s, color .2s;
+	&:has(.dark) {
+		background-color: #1e1e1e;
+		color: #fff;
+		a, p {
+			color: #FFF;
+		}
+	}
 }
-
 body {
 	margin: 0 auto;
 	width: 100%;
@@ -19,14 +26,7 @@ h1 {
 	margin: 1rem 0;
 	font-size: 2.5rem;
 }
-html.dark {
-	background-color: #1e1e1e;
-	color: #fff;
-}
 
-.dark .nav-links a {
-	color: #fff;
-}
 .nav-links {
 	width: 100%;
 	top: 5rem;
