@@ -1,6 +1,8 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import BlogPost from '../../components/BlogPost.astro';
+import PostList from "../../components/PostList.astro";
+import TagList from "../../components/TagList.astro";
 export const prerender = true;
 
 export async function getStaticPaths() {
@@ -20,7 +22,6 @@ const { posts } = Astro.props;
 ---
 <BaseLayout pageTitle={tag}>
 	<p>{tag}のタグが付いた記事</p>
-	<ul>
-		{posts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title} date={post.frontmatter.pubDate} />)}
-	</ul>
+	<PostList posts={posts} />
+	<TagList />
 </BaseLayout>
