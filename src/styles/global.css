@@ -1,5 +1,5 @@
 html {
-	background-color: #f1f5f9;
+	background-color: #FFFFFF;
 	font-family: sans-serif;
 }
 
@@ -11,7 +11,7 @@ body {
 	line-height: 1.5;
 }
 
-* {
+*, *::before, *::after {
 	box-sizing: border-box;
 }
 
@@ -20,7 +20,7 @@ h1 {
 	font-size: 2.5rem;
 }
 html.dark {
-	background-color: #0d0950;
+	background-color: #1e1e1e;
 	color: #fff;
 }
 
@@ -46,10 +46,6 @@ html.dark {
 	text-transform: uppercase;
 }
 
-.nav-links a:hover,
-.nav-links a:focus {
-	background-color: #ff9776;
-}
 .nav-links {
 	margin-left: 5em;
 	display: block;
