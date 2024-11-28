@@ -1,16 +1,23 @@
 ---
-const { url, title } = Astro.props;
+const { url, title, date } = Astro.props;
 ---
 
 <li>
 	<a href={url}>
-		<p transition:name={title}>{title}</p>
+		<h2 class="title" transition:name={title}>{title}</h2>
+		<p>{date.toString().slice(0,10)}</p>
 	</a>
 </li>
 
 <style>
 	li {
 		border: 1px solid #CCC;
-		padding: 20px;
+	}
+	a {
+		display: block;
+		padding: 10px;
+	}
+	.title {
+		font-size: 18px;
 	}
 </style>
