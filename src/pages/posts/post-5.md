@@ -7,7 +7,7 @@ image:
   url: "https://docs.astro.build/default-og-image.png"
   alt: "惑星と星のイラストの中にastroという単語があります。"
 pubDate: 2022-08-08
-tags: ["astro", "成功"]
+tags: ["JavaScript"]
 ---
 <iframe
 style="width:100%;height:520px;max-width:960px;"
