@@ -3,15 +3,20 @@ import Navigation from "./Navigation.astro"
 import ThemeIcon from "../svelte/components/ThemeIcon.svelte"
 ---
 <header class="header">
+	<h1 class="title"><a href="/">備忘録</a></h1>
 	<nav>
-		<Navigation />
+		<!--<Navigation />-->
 	</nav>
 	<ThemeIcon client:only="svelte" />
 </header>
 <style>
+	.title {
+		font-size: var(--main-title);
+	}
 	.header {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		padding: 0 10px;
 	}
 </style>
