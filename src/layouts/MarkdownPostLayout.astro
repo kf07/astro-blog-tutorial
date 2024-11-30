@@ -4,7 +4,7 @@ import TagList from "../components/TagList.astro";
 const { frontmatter } = Astro.props;
 ---
 <BaseLayout pageTitle={frontmatter.title}>
-<h2 transition:name={frontmatter.title} class="title">{frontmatter.title}</h2>
+<h1 transition:name={frontmatter.title} class="title">{frontmatter.title}</h1>
 <p>投稿日: {frontmatter.pubDate.toString().slice(0,10)}</p>
 <p><em>{frontmatter.description}</em></p>
 <p>著者: {frontmatter.author}</p>
@@ -15,6 +15,7 @@ const { frontmatter } = Astro.props;
 
 <style>
 	.title {
+		font-size: var(--post-title);
 		color: var(--text-color);
 	}
 </style>

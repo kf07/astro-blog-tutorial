@@ -3,7 +3,7 @@ import Navigation from "./Navigation.astro"
 import ThemeIcon from "../svelte/components/ThemeIcon.svelte"
 ---
 <header class="header">
-	<h1 class="title"><a href="/">備忘録</a></h1>
+	<a href="/" class="title">備忘録</a>
 	<nav>
 		<!--<Navigation />-->
 	</nav>
@@ -11,6 +11,7 @@ import ThemeIcon from "../svelte/components/ThemeIcon.svelte"
 </header>
 <style>
 	.title {
+		font-weight: bold;
 		font-size: var(--main-title);
 	}
 	.header {
