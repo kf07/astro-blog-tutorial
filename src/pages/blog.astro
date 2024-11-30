@@ -9,5 +9,13 @@ const pageTitle = "私のAstro学習ブログ";
 <BaseLayout pageTitle={pageTitle}>
 <p>ここには、私がAstroを学んでいく旅の様子を投稿します。</p>
 <PostList posts={allPosts} />
+<div class="tag-wrap">
 <TagList />
+</div>
 </BaseLayout>
+
+<style>
+	.tag-wrap {
+		margin-top:20px
+	}
+</style>

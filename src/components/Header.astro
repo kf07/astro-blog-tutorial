@@ -2,9 +2,16 @@
 import Navigation from "./Navigation.astro"
 import ThemeIcon from "../svelte/components/ThemeIcon.svelte"
 ---
-<header>
+<header class="header">
 	<nav>
-		<ThemeIcon client:only="svelte" />
 		<Navigation />
 	</nav>
+	<ThemeIcon client:only="svelte" />
 </header>
+<style>
+	.header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+</style>

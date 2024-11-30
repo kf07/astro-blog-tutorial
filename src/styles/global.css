@@ -1,7 +1,7 @@
 html {
 	background-color: #FFFFFF;
 	font-family: sans-serif;
-	transition: background-color .2s, color .2s;
+	transition: background-color .1s, color .1s;
 	&:has(.dark) {
 		background-color: #333;
 		color: #fff;
@@ -14,7 +14,6 @@ body {
 	margin: 0 auto;
 	width: 100%;
 	max-width: 80ch;
-	padding: 1rem;
 	line-height: 1.5;
 }
 
@@ -26,38 +25,6 @@ h1 {
 	margin: 1rem 0;
 	font-size: 2.5rem;
 }
-
-.nav-links {
-	width: 100%;
-	top: 5rem;
-	left: 48px;
-	display: none;
-	margin: 0;
-}
-
-.nav-links a {
-	display: block;
-	text-align: center;
-	padding: 10px 0;
-	text-decoration: none;
-	font-size: 1.2rem;
-	font-weight: bold;
-	text-transform: uppercase;
-}
-
-.nav-links {
-	margin-left: 5em;
-	display: block;
-	position: static;
-	width: auto;
-	background: none;
-}
-
-.nav-links a {
-	display: inline-block;
-	padding: 15px 20px;
-}
-
 ul,li {
 	list-style: none;
 	margin: 0;
