@@ -29,7 +29,7 @@ html {
 	font-family: sans-serif;
 	transition: background-color .1s, color .1s;
 	&:has(.dark) {
-		--bg-color: #333333;
+		--bg-color: #2C2C2C;
 		--text-color: #FFFFFF;
 	}
 }
