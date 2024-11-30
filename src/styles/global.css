@@ -1,13 +1,30 @@
+@property --main-title {
+	syntax: "<length>";
+	inherits: true;
+	initial-value: 20px;
+}
+@property --bg-color {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #FFFFFF;
+}
+@property --text-color {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #1E1E1E;
+}
+@media (767px >= width) {
+	:root {
+		--main-title: 18px;
+	}
+}
 html {
-	background-color: #FFFFFF;
+	background-color: var(--bg-color);
 	font-family: sans-serif;
 	transition: background-color .1s, color .1s;
 	&:has(.dark) {
-		background-color: #333;
-		color: #fff;
-		a, p {
-			color: #FFF;
-		}
+		--bg-color: #333333;
+		--text-color: #FFFFFF;
 	}
 }
 body {
@@ -28,17 +45,7 @@ ul,li {
 h1,h2,h3,h4 {
 	margin: 0;
 }
-a {
-	color: #1e1e1e;
+p, a {
+	color: var(--text-color);
 	text-decoration: none;
-}
-@property --main-title {
-	syntax: "<length>";
-	inherits: true;
-	initial-value: 20px;
-}
-@media (767px >= width) {
-	:root {
-		--main-title: 18px;
-	}
 }

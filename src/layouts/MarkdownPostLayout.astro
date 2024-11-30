@@ -4,7 +4,7 @@ import TagList from "../components/TagList.astro";
 const { frontmatter } = Astro.props;
 ---
 <BaseLayout pageTitle={frontmatter.title}>
-<h1 transition:name={frontmatter.title} class="title">{frontmatter.title}</h1>
+<h2 transition:name={frontmatter.title} class="title">{frontmatter.title}</h2>
 <p>投稿日: {frontmatter.pubDate.toString().slice(0,10)}</p>
 <p><em>{frontmatter.description}</em></p>
 <p>著者: {frontmatter.author}</p>
@@ -14,9 +14,7 @@ const { frontmatter } = Astro.props;
 </BaseLayout>
 
 <style>
-	.tags {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 10px;
+	.title {
+		color: var(--text-color);
 	}
 </style>
