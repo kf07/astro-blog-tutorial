@@ -4,4 +4,15 @@ export const prerender = false;
 const q = Astro.url.searchParams.get("q") ?? undefined;
 ---
 
-<Search id="search" query={q} />
+<Search id="search" query={q} className="search-box" />
+
+<style>
+	:root {
+		--pagefind-ui-primary: var(--text-color);
+		--pagefind-ui-text: var(--text-color);
+		--pagefind-ui-background: var(--bg-color);
+		--pagefind-ui-border: #eeeeee;
+		--pagefind-ui-tag: #eeeeee;
+	}
+
+</style>
