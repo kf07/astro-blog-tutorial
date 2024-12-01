@@ -1,17 +1,15 @@
 ---
-import Social from "./Social.astro"
+//import Social from "./Social.astro"
+import TagList from "./TagList.astro";
 ---
-
-<footer>
-	<!--<Social platform="twitter" username="astrodotbuild" />-->
-	<!--<Social platform="github" username="withastro" />-->
-	<!--<Social platform="youtube" username="astrodotbuild" />-->
-</footer>
+<div class="footer-wrap">
+	<footer class="container">
+		<TagList />
+	</footer>
+</div>
 
 <style>
-	footer {
-		display: flex;
-		gap: 1rem;
-		margin-top: 2rem;
+	.footer-wrap {
+		//background-color: #1E1E1E;
 	}
 </style>

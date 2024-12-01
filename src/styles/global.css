@@ -18,6 +18,11 @@
 	inherits: true;
 	initial-value: #1E1E1E;
 }
+@property --content-width {
+	syntax: "<length>";
+	inherits: false;
+	initial-value: 1120px;
+}
 @media (767px >= width) {
 	:root {
 		--main-title: 18px;
@@ -34,9 +39,7 @@ html {
 	}
 }
 body {
-	margin: 0 auto;
-	width: 100%;
-	max-width: 80ch;
+	margin: 0;
 	line-height: 1.5;
 }
 
@@ -55,4 +58,10 @@ h1,h2,h3,h4 {
 p, a {
 	color: var(--text-color);
 	text-decoration: none;
+}
+
+.container {
+	width: var(--content-width);
+	max-width: 100%;
+	margin-inline: auto;
 }

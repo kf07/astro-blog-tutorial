@@ -3,8 +3,9 @@ import Search from "astro-pagefind/components/Search";
 export const prerender = false;
 const q = Astro.url.searchParams.get("q") ?? undefined;
 ---
-
+<div class="container">
 <Search id="search" query={q} className="search-box" />
+</div>
 
 <style>
 	:root {
