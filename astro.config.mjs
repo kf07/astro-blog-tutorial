@@ -1,4 +1,5 @@
 import { defineConfig } from 'astro/config';
+import pagefind from "astro-pagefind";
 import vercel from '@astrojs/vercel/serverless';
 
 import svelte from '@astrojs/svelte';
@@ -8,5 +9,8 @@ export default defineConfig({
     site: 'https://example.com',
     output: 'server',
     adapter: vercel(),
-    integrations: [svelte()],
+    integrations: [
+		svelte(),
+		pagefind()
+	],
 });

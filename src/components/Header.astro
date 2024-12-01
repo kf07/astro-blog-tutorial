@@ -1,6 +1,7 @@
 ---
 import Navigation from "./Navigation.astro"
 import ThemeIcon from "../svelte/components/ThemeIcon.svelte"
+import PostSearch from "./PostSeach.astro";
 ---
 <header class="header">
 	<a href="/" class="title">備忘録</a>
@@ -9,6 +10,7 @@ import ThemeIcon from "../svelte/components/ThemeIcon.svelte"
 	</nav>
 	<ThemeIcon client:only="svelte" />
 </header>
+<PostSearch />
 <style>
 	.title {
 		font-weight: bold;
