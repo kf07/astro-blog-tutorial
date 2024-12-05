@@ -1,5 +1,4 @@
 import { defineConfig } from 'astro/config';
-import pagefind from "astro-pagefind";
 import vercelStatic from '@astrojs/vercel/static';
 
 import svelte from '@astrojs/svelte';
@@ -11,6 +10,5 @@ export default defineConfig({
 	adapter: vercelStatic(),
     integrations: [
 		svelte(),
-		pagefind()
 	],
 });
