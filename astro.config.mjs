@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import vercelStatic from '@astrojs/vercel/static';
+import { visualizer } from "rollup-plugin-visualizer";
 
 import svelte from '@astrojs/svelte';
 
@@ -11,4 +12,10 @@ export default defineConfig({
     integrations: [
 		svelte(),
 	],
+	vite: {
+		plugins: [visualizer({
+			emitFile: true,
+			filename: "stats.html",
+		})]
+	}
 });
