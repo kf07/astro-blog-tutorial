@@ -1,18 +1,11 @@
 ---
-import "@pagefind/default-ui/css/ui.css";
----
+import Search from "astro-pagefind/components/Search";
+export const prerender = false;
+const q = Astro.url.searchParams.get("q") ?? undefined;
 ---
 <div class="container">
-	<div class="search"></div>
+	<Search id="search" query={q} className="search-box" />
 </div>
-
-<script>
-	import { PagefindUI } from "@pagefind/default-ui";
-
-	new PagefindUI({
-		element: ".search",
-	});
-</script>
 
 <style>
 	:root {

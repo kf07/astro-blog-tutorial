@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 import vercelStatic from '@astrojs/vercel/static';
 import { visualizer } from "rollup-plugin-visualizer";
+import pagefind from "astro-pagefind";
 
 import svelte from '@astrojs/svelte';
 
@@ -11,6 +12,7 @@ export default defineConfig({
 	adapter: vercelStatic(),
     integrations: [
 		svelte(),
+		pagefind()
 	],
 	vite: {
 		plugins: [visualizer({
