@@ -6,7 +6,7 @@ description: "この記事単独で表示されます！"
 image:
   url: "https://docs.astro.build/default-og-image.png"
   alt: "惑星と星のイラストの中にastroという単語があります。"
-pubDate: 2022-08-08
+pubDate: 2022-08-07
 tags: ["astro", "JavaScript"]
 ---
 記事のリストを作成するために`Astro.glob()`がすべての記事データのリストを返しているので、この記事は他のブログ記事と一緒に表示されるはずです。
